@@ -26,26 +26,34 @@ namespace ConsoleApp3
             Console.WriteLine("\nOperações realizadas com sucesso!\n");
 
             resultado = numero1 + numero2;
-            Console.WriteLine("Soma -> " + numero1 + " + " + numero2 + " = " + resultado);
+            //Console.WriteLine("Soma -> " + numero1 + " + " + numero2 + " = " + resultado);
+            Console.WriteLine("Soma -> {0} + {1} = {2}", numero1, numero2, resultado);      // Forma formatada de print
 
             resultado = numero1 - numero2;
-            Console.WriteLine("Subtração -> " + numero1 + " - " + numero2 + " = " + resultado);
+            //Console.WriteLine("Subtração -> " + numero1 + " - " + numero2 + " = " + resultado);
+            Console.WriteLine("Subtração -> {0} - {1} = {2}", numero1, numero2, resultado);  // Forma formatada de print
 
             resultado = 0;
             for(int i = 0; i < numero1; i++)
             {
                 resultado += numero2;
             }
-            Console.WriteLine("Multiplicação -> " + numero1 + " * " + numero2 + " = " + resultado);
+            //Console.WriteLine("Multiplicação -> " + numero1 + " * " + numero2 + " = " + resultado);
+            Console.WriteLine("Multiplicação -> {0} * {1} = {2}", numero1, numero2, resultado);  // Forma formatada de print
 
             resultado = 0;
             int auxiliar = numero1;
-            while(auxiliar > numero2)
+            while(auxiliar >= numero2)
             {
                 resultado += 1;
                 auxiliar -= numero2;
             }
-            Console.WriteLine("Divisão -> " + numero1 + " / " + numero2 + " = " + resultado);
+            //Console.WriteLine("Divisão -> " + numero1 + " / " + numero2 + " = " + resultado);
+            Console.WriteLine("Divisão -> {0} / {1} = {2}", numero1, numero2, resultado);  // Forma formatada de print
+            if(auxiliar > 0)
+            {
+                Console.WriteLine("Resto da divisão -> {0} % {1} = {2}", numero1, numero2, auxiliar);
+            }
 
             Console.ReadKey();
         }

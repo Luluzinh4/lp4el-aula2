@@ -53,6 +53,9 @@ namespace ConsoleApp3
             if(auxiliar > 0)
             {
                 Console.WriteLine("Resto da divisão -> {0} % {1} = {2}", numero1, numero2, auxiliar);
+            } else
+            {
+                Console.WriteLine("Não houve resto maior que zero nesta operação");
             }
 
             Console.ReadKey();
